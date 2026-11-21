@@ -53,7 +53,7 @@ export default function Navbar({
                 <Sparkles className="w-3 h-3 text-indigo-400" /> NEW DROP
               </span>
               <span>
-                Spring 2026 Collection is live! Use code <strong className="text-white font-mono bg-white/10 px-1.5 py-0.5 rounded">AURA15</strong> for 15% off.
+                Spring 2026 Collection is live! Use code <strong className="text-white font-mono bg-white/10 px-1.5 py-0.5 rounded">UPERSKILL15</strong> for 15% off.
               </span>
             </div>
             <button 
@@ -85,7 +85,7 @@ export default function Navbar({
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight text-slate-900 group-hover:text-indigo-600 transition-colors">
-                  AURA
+                  uperskill Shop
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-slate-400 font-semibold -mt-1">
                   Living & Style

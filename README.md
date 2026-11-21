@@ -1,4 +1,4 @@
-# AURA — Modern Lifestyle Shop Landing Page
+# uperskill Shop — Modern Lifestyle Shop Landing Page
 
 A modern, responsive, and interactive shop landing page built with **React**, **Vite**, **Tailwind CSS**, and **Lucide React**.
 
@@ -43,25 +43,25 @@ A modern, responsive, and interactive shop landing page built with **React**, **
 
 - **Interactive Cart Drawer**:
   - Slide-out drawer from the right.
-  - Dynamic Free Shipping progress bar (unlocks free shipping at $75+).
+  - Dynamic Free Shipping progress bar (unlocks free delivery at $75+).
   - Quantity controls (`-` / `+`) and item removal.
-  - Coupon code support with pre-loaded `AURA15` (15% off) and `WELCOME10` (10% off).
+  - Coupon code support with pre-loaded `UPERSKILL15` (15% off) and `WELCOME10` (10% off).
   - Live subtotal, discount, shipping, and total calculations.
 
 - **Simulated Checkout Flow**:
   - 2-step checkout modal with shipping address and card payment details.
   - Simulated processing state with spinner.
-  - Order confirmation screen with unique order tracking reference (`#AURA-XXXXXX`).
+  - Order confirmation screen with unique order tracking reference (`#UPERSKILL-XXXXXX`).
 
 - **Flash Deals & Promo Section**:
   - Live countdown clock (hours, minutes, seconds).
-  - One-click "Copy Code" coupon voucher for `AURA15`.
+  - One-click "Copy Code" coupon voucher for `UPERSKILL15`.
 
 - **Social Proof & Engagement**:
   - Verified buyer testimonials with customer portraits and purchased item tags.
   - Expandable FAQ accordion.
   - Newsletter subscriber form with instant validation.
-  - Full-featured footer with back-to-top button.
+  - Full-featured footer with back-to-top navigation.
 
 ## 🚀 Getting Started
 

@@ -30,10 +30,10 @@ export default function PromoBanner({ onApplyCode, onShowToast }) {
   }, []);
 
   const handleCopy = () => {
-    navigator.clipboard?.writeText('AURA15');
+    navigator.clipboard?.writeText('UPERSKILL15');
     setCopied(true);
-    if (onApplyCode) onApplyCode('AURA15');
-    if (onShowToast) onShowToast('Coupon code AURA15 copied to clipboard!', 'general');
+    if (onApplyCode) onApplyCode('UPERSKILL15');
+    if (onShowToast) onShowToast('Coupon code UPERSKILL15 copied to clipboard!', 'general');
     setTimeout(() => setCopied(false), 2000);
   };
 
@@ -113,7 +113,7 @@ export default function PromoBanner({ onApplyCode, onShowToast }) {
                 <div className="flex items-center justify-between bg-slate-900 border border-slate-800 rounded-xl px-4 py-3">
                   <div>
                     <span className="text-[10px] text-slate-400 uppercase tracking-widest block font-medium">Coupon Code</span>
-                    <span className="font-mono text-xl font-black tracking-widest text-indigo-300">AURA15</span>
+                    <span className="font-mono text-xl font-black tracking-widest text-indigo-300">UPERSKILL15</span>
                   </div>
                   <button
                     onClick={handleCopy}

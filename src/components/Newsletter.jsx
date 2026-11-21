@@ -10,7 +10,7 @@ export default function Newsletter({ onShowToast }) {
     if (!email || !email.includes('@')) return;
     setIsSubmitted(true);
     if (onShowToast) {
-      onShowToast(`Welcome to the AURA circle! Your 15% code is ready.`, 'general');
+      onShowToast(`Welcome to the uperskill Shop circle! Your 15% code is ready.`, 'general');
     }
   };
 
@@ -25,7 +25,7 @@ export default function Newsletter({ onShowToast }) {
           <div className="relative z-10 max-w-xl mx-auto space-y-6">
             <div className="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-3.5 py-1 rounded-full text-xs font-semibold">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>AURA Insider Access</span>
+              <span>uperskill Shop Insider Access</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white leading-tight">
@@ -39,7 +39,7 @@ export default function Newsletter({ onShowToast }) {
             {isSubmitted ? (
               <div className="bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 p-4 rounded-2xl flex items-center justify-center gap-2 text-sm font-semibold animate-in zoom-in-95 duration-200">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span>You are in! Use code <strong className="font-mono text-white">AURA15</strong> at checkout.</span>
+                <span>You are in! Use code <strong className="font-mono text-white">UPERSKILL15</strong> at checkout.</span>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 max-w-md mx-auto">

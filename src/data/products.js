@@ -1,7 +1,7 @@
 export const PRODUCTS = [
   {
     id: 1,
-    name: 'AURA Studio ANC Headphones',
+    name: 'uperskill Studio ANC Headphones',
     category: 'Audio & Tech',
     price: 189,
     originalPrice: 249,
@@ -61,7 +61,7 @@ export const PRODUCTS = [
   },
   {
     id: 4,
-    name: 'AURA Tactile Mechanical Keyboard',
+    name: 'uperskill Tactile Mechanical Keyboard',
     category: 'Audio & Tech',
     price: 129,
     originalPrice: 160,
@@ -255,10 +255,10 @@ export const TESTIMONIALS = [
     name: 'Elena Rostova',
     role: 'Interior Architect, Stockholm',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
-    content: 'The craftsmanship of the AURA Studio headphones and walnut desk riser transformed my studio workspace. Aesthetic perfection combined with flawless performance.',
+    content: 'The craftsmanship of the uperskill Studio headphones and walnut desk riser transformed my studio workspace. Aesthetic perfection combined with flawless performance.',
     rating: 5,
     verified: true,
-    product: 'AURA Studio ANC Headphones'
+    product: 'uperskill Studio ANC Headphones'
   },
   {
     id: 2,
@@ -293,7 +293,7 @@ export const FAQS = [
   },
   {
     question: 'Do your tech and audio products carry a warranty?',
-    answer: 'Yes! All AURA electronics, watches, and smart hardware include our complimentary 2-Year Comprehensive Warranty covering any manufacturing defects, battery health, and mechanical parts.'
+    answer: 'Yes! All uperskill Shop electronics, watches, and smart hardware include our complimentary 2-Year Comprehensive Warranty covering any manufacturing defects, battery health, and mechanical parts.'
   },
   {
     question: 'Are materials ethically sourced and eco-friendly?',

@@ -16,7 +16,7 @@ export default function Testimonials() {
             Loved by creators & design lovers worldwide.
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
-            Over 45,000 customers have made AURA an essential part of their day. Here is what they have to say.
+            Over 45,000 customers have made uperskill Shop an essential part of their day. Here is what they have to say.
           </p>
         </div>
 

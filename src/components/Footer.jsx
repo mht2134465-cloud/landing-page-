@@ -38,7 +38,7 @@ export default function Footer({ onSelectCategory }) {
                 <Sparkles className="w-4 h-4 text-indigo-300" />
               </div>
               <span className="text-xl font-extrabold text-white tracking-tight">
-                AURA
+                uperskill Shop
               </span>
             </div>
             
@@ -144,7 +144,7 @@ export default function Footer({ onSelectCategory }) {
           {/* Column 3: Company */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">
-              About AURA
+              About uperskill Shop
             </h4>
             <ul className="space-y-2">
               <li>
@@ -180,7 +180,7 @@ export default function Footer({ onSelectCategory }) {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
           <div>
-            &copy; 2026 AURA Living & Style Inc. All rights reserved. Crafted with care for modern living.
+            &copy; 2026 uperskill Shop Inc. All rights reserved. Crafted with care for modern living.
           </div>
 
           <div className="flex items-center gap-4">

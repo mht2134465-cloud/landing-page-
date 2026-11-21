@@ -21,7 +21,7 @@ export default function App() {
   // Cart state persisted in localStorage
   const [cart, setCart] = useState(() => {
     try {
-      const saved = localStorage.getItem('aura_cart');
+      const saved = localStorage.getItem('uperskill_cart') || localStorage.getItem('aura_cart');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -31,7 +31,7 @@ export default function App() {
   // Wishlist state persisted in localStorage
   const [wishlist, setWishlist] = useState(() => {
     try {
-      const saved = localStorage.getItem('aura_wishlist');
+      const saved = localStorage.getItem('uperskill_wishlist') || localStorage.getItem('aura_wishlist');
       return saved ? JSON.parse(saved) : [];
     } catch {
       return [];
@@ -48,13 +48,13 @@ export default function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
-  const [appliedCoupon, setAppliedCoupon] = useState('AURA15'); // pre-applied for convenience
+  const [appliedCoupon, setAppliedCoupon] = useState('UPERSKILL15'); // pre-applied for convenience
   const [toast, setToast] = useState(null);
 
   // Sync to localStorage
   useEffect(() => {
     try {
-      localStorage.setItem('aura_cart', JSON.stringify(cart));
+      localStorage.setItem('uperskill_cart', JSON.stringify(cart));
     } catch (e) {
       console.error(e);
     }
@@ -62,7 +62,7 @@ export default function App() {
 
   useEffect(() => {
     try {
-      localStorage.setItem('aura_wishlist', JSON.stringify(wishlist));
+      localStorage.setItem('uperskill_wishlist', JSON.stringify(wishlist));
     } catch (e) {
       console.error(e);
     }
@@ -212,7 +212,7 @@ export default function App() {
 
   // Total cart calculation for checkout
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const discountRate = appliedCoupon === 'AURA15' ? 0.15 : (appliedCoupon === 'WELCOME10' ? 0.10 : 0);
+  const discountRate = (appliedCoupon === 'UPERSKILL15' || appliedCoupon === 'UPER15' || appliedCoupon === 'AURA15') ? 0.15 : (appliedCoupon === 'WELCOME10' ? 0.10 : 0);
   const discountAmount = Math.round(subtotal * discountRate);
   const shippingCost = subtotal === 0 || subtotal >= 75 ? 0 : 10;
   const grandTotal = Math.max(0, subtotal - discountAmount + shippingCost);

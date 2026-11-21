@@ -34,7 +34,7 @@ export default function CartDrawer({
     0
   );
 
-  const discountRate = appliedCoupon === 'AURA15' ? 0.15 : (appliedCoupon === 'WELCOME10' ? 0.10 : 0);
+  const discountRate = (appliedCoupon === 'UPERSKILL15' || appliedCoupon === 'AURA15' || appliedCoupon === 'UPER15') ? 0.15 : (appliedCoupon === 'WELCOME10' ? 0.10 : 0);
   const discountAmount = Math.round(subtotal * discountRate);
 
   const shippingCost = subtotal === 0 || subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : 10;
@@ -46,12 +46,12 @@ export default function CartDrawer({
   const handleCouponSubmit = (e) => {
     e.preventDefault();
     const code = couponInput.trim().toUpperCase();
-    if (code === 'AURA15' || code === 'WELCOME10') {
+    if (code === 'UPERSKILL15' || code === 'UPER15' || code === 'AURA15' || code === 'WELCOME10') {
       onApplyCoupon(code);
       setCouponError('');
       setCouponInput('');
     } else {
-      setCouponError('Invalid coupon code. Try AURA15 or WELCOME10.');
+      setCouponError('Invalid coupon code. Try UPERSKILL15 or WELCOME10.');
     }
   };
 
@@ -198,7 +198,7 @@ export default function CartDrawer({
                     <Tag className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                     <input
                       type="text"
-                      placeholder="Coupon code (e.g. AURA15)"
+                      placeholder="Coupon code (e.g. UPERSKILL15)"
                       value={couponInput}
                       onChange={(e) => setCouponInput(e.target.value)}
                       className="w-full text-xs pl-8 pr-3 py-2 bg-white rounded-xl border border-slate-200 focus:outline-none focus:border-indigo-500 font-mono"

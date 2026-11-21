@@ -38,7 +38,7 @@ export default function Hero({ onAddToCart, onQuickView, featuredProduct }) {
               <span>Spring & Summer 2026 Collection</span>
               <span className="text-slate-300">|</span>
               <span className="text-indigo-600 font-semibold flex items-center gap-1">
-                Save 15% with code AURA15
+                Save 15% with code UPERSKILL15
               </span>
             </div>
 
@@ -133,7 +133,7 @@ export default function Hero({ onAddToCart, onQuickView, featuredProduct }) {
                   <div className="flex items-start justify-between gap-2">
                     <div>
                       <h3 className="text-lg font-bold text-slate-900">
-                        {featuredProduct?.name || "AURA Studio ANC Headphones"}
+                        {featuredProduct?.name || "uperskill Studio ANC Headphones"}
                       </h3>
                       <p className="text-xs text-slate-500">
                         Hybrid Active Noise Cancellation • 45hr Battery

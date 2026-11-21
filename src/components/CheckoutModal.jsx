@@ -39,7 +39,7 @@ export default function CheckoutModal({
     setIsProcessing(true);
 
     setTimeout(() => {
-      const generatedOrder = `AURA-${Math.floor(100000 + Math.random() * 900000)}`;
+      const generatedOrder = `UPERSKILL-${Math.floor(100000 + Math.random() * 900000)}`;
       setOrderNumber(generatedOrder);
       setIsProcessing(false);
       setIsSuccess(true);
